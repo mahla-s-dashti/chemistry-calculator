@@ -1,3 +1,7 @@
+running = True
+
+while running:
+
 print("="*40)
 print("Chemistry Calculator")
 print("="*40)
@@ -14,14 +18,15 @@ print("You selected:", choice)
 
 
 if choice == "1":
-    print("Molar Mass Calculator")
+    print("\nMolar Mass Calculator\n")
 elif choice == "2":
-    print("Gram to Mole Converter")
+    print("\nGram to Mole Converter\n")
 elif choice == "3":
-    print("Mole to Gram Converter")
+    print("\nMole to Gram Converter\n")
 elif choice == "4":
-    print("Percent Composition")
+    print("\nPercent Composition\n")
 elif choice == "5":
-    print("Goodbye!")
+    print("\nThank you for using Chemistry Calculator!")
+    running = False
 else:
-    print("Invalid option")
+    print("\nInvalid option!\n")
