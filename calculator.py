@@ -15,3 +15,13 @@ def calculate_molar_mass(parsed_formula):
         total_mass += ATOMIC_MASSES[element] * count
 
     return total_mass
+
+def grams_to_moles(mass , molar_mass):
+    """
+    Convert mass in grams to amount of subtance in moles.
+    Parameters:
+    mass(float): mass of the subtance in grams.
+    molar_mass(float):molar_mass of the subtance in gram per mole( g/mol ).
+    Returns(float): The amount of subtance in mole
+    """
+    return mass/molar_mass
